@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .about{
+    padding: 100px 0;
+}
+
+.about h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(58, 43, 91);
+    margin-bottom: 20px;
+}
+
+.about-text{
+    max-width: 750px;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    color: rgb(90, 90, 110);
+    margin-bottom: 50px;
+}
+
+.about-cards{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.about-card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+}
+
+.about-card:hover{
+    transform: translateY(-5px);
+}
+
+.about-card h3{
+    color: rgb(88, 28, 135);
+    margin-bottom: 10px;
+}
+
+.about-card p{
+    color: rgb(90, 90, 110);
+    line-height: 1.7;
+}
+.projects{
+    margin-top: 80px;
+    animation: fadeUp 1s ease;
+}
+
+.projects h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(58, 43, 91);
+}
+
+.projects-text{
+    max-width: 750px;
+    font-size: 1.02rem;
+    line-height: 1.9;
+    color: rgb(90, 90, 110);
+    margin-bottom: 30px;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.project-img{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(88,28,135,0.2));
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3{
+    color: #5b21b6;
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-links a{
+    text-decoration: none;
+    color: rgb(88, 28, 135);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.project-links a:hover{
+    text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <section class="about" id="about">
+
+  <h2>About Me</h2>
+
+  <p class="about-text">
+    I'm a frontend developer passionate about creating modern,
+    responsive, and visually engaging web experiences.
+    I enjoy transforming ideas into clean and interactive interfaces
+    while continuously improving my skills in frontend development.
+  </p>
+
+  <div class="about-cards">
+
+    <div class="about-card">
+      <h3>Frontend</h3>
+      <p>Building responsive and interactive user interfaces.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>UI Focused</h3>
+      <p>Creating clean, modern, and user-friendly designs.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>Continuous Learning</h3>
+      <p>Always improving my frontend and problem-solving skills.</p>
+    </div>
+
+  </div>
+
+</section>
+<section class="projects" id="projects">
+  <h2>Featured Projects</h2>
+  <p class="projects-text">
+    A selection of projects that showcase my frontend development skills and UI design approach.
+  </p>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="project-img"></div>
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal portfolio built with HTML, CSS and JavaScript.</p>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img"></div>
+      <h3>Landing Page UI</h3>
+      <p>Modern landing page design focused on conversion and responsiveness.</p>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img"></div>
+      <h3>Todo App</h3>
+      <p>Simple task management app with local storage functionality.</p>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
